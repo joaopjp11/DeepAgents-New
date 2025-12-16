@@ -1,0 +1,5 @@
+# Environment variables
+.env
+
+# Chroma / vector store
+chroma_store/

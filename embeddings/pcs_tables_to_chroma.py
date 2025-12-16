@@ -20,43 +20,52 @@ df = pd.read_csv('./data/icd10pcs_tables_2026.csv')
 
 pcs_documents = []
 
-# Convert each row of the DataFrame into a Document object
-for _, row in df.iterrows():
-    text = (
-        f"Full Code: {row.get('full_code')}\n"
-        f"Section: {row.get('section')}\n"
-        f"Body System: {row.get('body_system')}\n"
-        f"Operation: {row.get('operation')}\n"
-        f"Operation Definition: {row.get('operation_definition')}\n"
-        f"Body Part: {row.get('body_part_code')} - {row.get('body_part')}\n"
-        f"Approach: {row.get('approach_code')} - {row.get('approach')}\n"
-        f"Device: {row.get('device_code')} - {row.get('device')}\n"
-        f"Qualifier: {row.get('qualifier_code')} - {row.get('qualifier')}"
+pcs_documents = []
+
+# Group rows by PCS table definition
+grouped = df.groupby(["section", "body_system", "operation"])
+
+for (section, body_system, operation), group in grouped:
+    # Use first row for shared metadata
+    first_row = group.iloc[0]
+
+    # Build table-level header
+    table_text = (
+        f"PCS TABLE\n"
+        f"Section: {section}\n"
+        f"Body System: {body_system}\n"
+        f"Operation: {operation}\n"
+        f"Operation Definition: {first_row.get('operation_definition')}\n\n"
+        f"ROWS:\n"
     )
 
+    # Add each row in the table
+    for _, row in group.iterrows():
+        table_text += (
+            f"- Full Code: {row.get('full_code')}\n"
+            f"  Body Part: {row.get('body_part_code')} - {row.get('body_part')}\n"
+            f"  Approach: {row.get('approach_code')} - {row.get('approach')}\n"
+            f"  Device: {row.get('device_code')} - {row.get('device')}\n"
+            f"  Qualifier: {row.get('qualifier_code')} - {row.get('qualifier')}\n\n"
+        )
+
     metadata = {
-        "full_code": row.get("full_code"),
-        "section": row.get("section"),
-        "body_system": row.get("body_system"),
-        "operation": row.get("operation"),
-        "operation_definition": row.get("operation_definition"),
-        "body_part_code": row.get("body_part_code"),
-        "body_part": row.get("body_part"),
-        "approach_code": row.get("approach_code"),
-        "approach": row.get("approach"),
-        "device_code": row.get("device_code"),
-        "device": row.get("device"),
-        "qualifier_code": row.get("qualifier_code"),
-        "qualifier": row.get("qualifier"),
+        "section": section,
+        "body_system": body_system,
+        "operation": operation,
+        "operation_definition": first_row.get("operation_definition"),
+        "table_code_prefix": str(first_row.get("full_code"))[:3],
+        "row_count": len(group),
     }
 
-    pcs_documents.append(Document(text=text, metadata=metadata))
+    pcs_documents.append(Document(text=table_text.strip(), metadata=metadata))
 
 print(f"Total documents created: {len(pcs_documents)}")
 
 # Initialize Chroma client for vector storage
 print("\nInitializing Chroma client...")
 chroma_client = chromadb.PersistentClient("./chroma_store")
+chroma_client.delete_collection("icd10pcs_tables")
 chroma_collection = chroma_client.get_or_create_collection("icd10pcs_tables")
 vector_store = ChromaVectorStore(chroma_collection=chroma_collection)
 storage_context = StorageContext.from_defaults(vector_store=vector_store)
