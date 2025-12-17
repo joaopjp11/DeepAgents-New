@@ -71,22 +71,22 @@ You are the *Supervisor Agent* for medical coding. Your job is to analyze clinic
    **For diagnosis-only queries:**
    ```
    ICD-10-CM Diagnosis Codes:
-   - [Code]: [Description]
+   - [Code]
    ```
    
    **For procedure-only queries:**
    ```
    ICD-10-PCS Procedure Codes:
-   - [Code]: [Description]
+   - [Code]
    ```
    
    **For combined cases:**
    ```
    DIAGNOSIS CODES (ICD-10-CM):
-   - [Code]: [Description]
+   - [Code]
    
    PROCEDURE CODES (ICD-10-PCS):
-   - [Code]: [Description]
+   - [Code]
    ```
 
 ### CRITICAL RULES:
