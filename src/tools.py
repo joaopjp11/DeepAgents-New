@@ -60,6 +60,7 @@ _PERSIST_DIR = "chroma_store"
 _COLLECTION_NAME = "icd10_tabular"
 _COLLECTION_NAME_PARENTS="icd10_tabular_top_level"
 _COLLECTION_NAME_PCS = "icd10pcs_tables"
+_COLLECTION_NAME_PCS_GUIDELINES = "icd10pcs_guidelines"
 
 
 __CHROMA_CLIENT: Optional[chromadb.PersistentClient] = None
@@ -231,7 +232,7 @@ def icd10pcs_procedure_query(query: str) -> str:
 
     index = _get_index_for_collection(_COLLECTION_NAME_PCS)
 
-    hits = index.as_retriever(similarity_top_k=5).retrieve(query)
+    hits = index.as_retriever(similarity_top_k=15).retrieve(query)
 
     dt = (time.perf_counter() - t0) * 1000
     logger.info("PCS retrieval time %.1f ms", dt)
@@ -261,4 +262,39 @@ def icd10pcs_procedure_query(query: str) -> str:
             f"   Qualifier: {meta.get('qualifier')}\n"
         )
 
+    return "\n".join(out)
+
+
+@tool
+def icd10pcs_guidelines_query(query: str) -> str:
+    """
+    Retrieve passages from the ICD-10-PCS Official Guidelines collection.
+    Returns top 5 snippets with marker/title when available.
+    """
+    logger.info("icd10pcs_guidelines_query called | query=%r", query)
+    t0 = time.perf_counter()
+
+    try:
+        index = _get_index_for_collection(_COLLECTION_NAME_PCS_GUIDELINES)
+    except Exception as e:
+        logger.warning("Guidelines collection not available: %s", e)
+        return "❌ Guidelines collection not found. Run embeddings/guidelines_to_chroma.py first."
+
+    hits = index.as_retriever(similarity_top_k=5).retrieve(query)
+    dt = (time.perf_counter() - t0) * 1000
+    logger.info("Guidelines retrieval time %.1f ms", dt)
+
+    if not hits:
+        return "(no guideline passages found)"
+
+    out = ["📘 ICD-10-PCS Guidelines hits:"]
+    for i, n in enumerate(hits, start=1):
+        meta = getattr(n.node, "metadata", {}) or {}
+        marker = meta.get("marker") or ""
+        title = meta.get("title") or ""
+        header = f"{i}. {marker} — {title}".strip(" —")
+        out.append(header)
+        text = _node_text(n).strip()
+        if text:
+            out.append(text)
     return "\n".join(out)

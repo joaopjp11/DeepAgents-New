@@ -1,5 +1,14 @@
-# Environment variables
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*.lock
+
+# Virtual environments
+.venv
 .env
 
-# Chroma / vector store
-chroma_store/
+**/chroma_store/
