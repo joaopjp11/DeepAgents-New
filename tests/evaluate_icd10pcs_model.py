@@ -7,6 +7,7 @@ import sys
 import os
 import re
 from pathlib import Path
+from test_cases import TEST_CASES
 
 # Adicionar o diretório raiz ao path
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -29,58 +30,58 @@ print("AVALIAÇÃO DO MODELO ICD-10-PCS - CÓDIGOS DE PROCEDIMENTOS")
 print("="*70)
 
 # Casos de teste manualmente curados
-TEST_CASES = [
-    {
-        "description": "Laparoscopic appendectomy",
-        "expected_code": "0DTJ4ZZ",
-        "notes": "Resection of appendix, percutaneous endoscopic"
-    },
-    {
-        "description": "Open cholecystectomy",
-        "expected_code": "0FT40ZZ",
-        "notes": "Resection of gallbladder, open approach"
-    },
-    {
-        "description": "Percutaneous coronary angioplasty of single coronary artery",
-        "expected_code": "02703ZZ",
-        "notes": "Dilation of coronary artery, percutaneous"
-    },
-    {
-        "description": "Total knee replacement, right",
-        "expected_code": "0SRC0JZ",
-        "notes": "Replacement of right knee joint"
-    },
-    {
-        "description": "Diagnostic bronchoscopy",
-        "expected_code": "0BJ08ZZ",
-        "notes": "Inspection of trachea, via natural or artificial opening endoscopic"
-    },
-    {
-        "description": "Percutaneous liver biopsy",
-        "expected_code": "0FB03ZX",
-        "notes": "Excision of liver, percutaneous, diagnostic"
-    },
-    {
-        "description": "Open inguinal hernia repair with mesh",
-        "expected_code": "0YU60JZ",
-        "notes": "Supplement abdominal wall with synthetic substitute, open"
-    },
-    {
-        "description": "Laparoscopic hysterectomy",
-        "expected_code": "0UT94ZZ",
-        "notes": "Resection of uterus, percutaneous endoscopic"
-    },
-    {
-        "description": "Right total hip arthroplasty",
-        "expected_code": "0SR9019",
-        "notes": "Replacement of right hip joint with metal on polyethylene"
-    },
-    {
-        "description": "Colonoscopy with polypectomy",
-        "expected_code": "0DBN8ZZ",
-        "notes": "Excision of large intestine, via natural opening endoscopic"
-    },
-]
+# TEST_CASES = [
+#     {
+#         "description": "Laparoscopic appendectomy",
+#         "expected_code": "0DTJ4ZZ",
+#         "notes": "Resection of appendix, percutaneous endoscopic"
+#     },
+#     {
+#         "description": "Open cholecystectomy",
+#         "expected_code": "0FT40ZZ",
+#         "notes": "Resection of gallbladder, open approach"
+#     },
+#     {
+#         "description": "Percutaneous coronary angioplasty of single coronary artery",
+#         "expected_code": "02703ZZ",
+#         "notes": "Dilation of coronary artery, percutaneous"
+#     },
+#     {
+#         "description": "Total knee replacement, right",
+#         "expected_code": "0SRC0JZ",
+#         "notes": "Replacement of right knee joint"
+#     },
+#     {
+#         "description": "Diagnostic bronchoscopy",
+#         "expected_code": "0BJ08ZZ",
+#         "notes": "Inspection of trachea, via natural or artificial opening endoscopic"
+#     },
+#     {
+#         "description": "Percutaneous liver biopsy",
+#         "expected_code": "0FB03ZX",
+#         "notes": "Excision of liver, percutaneous, diagnostic"
+#     },
+#     {
+#         "description": "Open inguinal hernia repair with mesh",
+#         "expected_code": "0YU60JZ",
+#         "notes": "Supplement abdominal wall with synthetic substitute, open"
+#     },
+#     {
+#         "description": "Laparoscopic hysterectomy",
+#         "expected_code": "0UT94ZZ",
+#         "notes": "Resection of uterus, percutaneous endoscopic"
+#     },
+#     {
+#         "description": "Right total hip arthroplasty",
+#         "expected_code": "0SR9019",
+#         "notes": "Replacement of right hip joint with metal on polyethylene"
+#     },
+#     {
+#         "description": "Colonoscopy with polypectomy",
+#         "expected_code": "0DBN8ZZ",
+#         "notes": "Excision of large intestine, via natural opening endoscopic"
+#     },
+# ]
 
 # Inicializar o modelo
 print("\n[1/3] Inicializando o modelo...")

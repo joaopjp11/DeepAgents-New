@@ -3,8 +3,8 @@ RESULTADOS DA AVALIAÇÃO ICD-10-PCS
 ======================================================================
 
 Total testado: 10
-Exact Match Accuracy: 40.0%
-Média posições corretas: 5.8/7
+Exact Match Accuracy: 10.0%
+Média posições corretas: 3.0/7
 
 Detalhes:
 
@@ -12,8 +12,8 @@ Detalhes:
    Esperado: 0DTJ4ZZ | Obtido: 0DBJ4ZZ
    Notas: Resection of appendix, percutaneous endoscopic
 
-✓ 2. Open cholecystectomy
-   Esperado: 0FT40ZZ | Obtido: 0FT40ZZ
+✗ 2. Open cholecystectomy
+   Esperado: 0FT40ZZ | Obtido: 0FBM0ZZ
    Notas: Resection of gallbladder, open approach
 
 ✓ 3. Percutaneous coronary angioplasty of single coronary artery
@@ -21,29 +21,29 @@ Detalhes:
    Notas: Dilation of coronary artery, percutaneous
 
 ✗ 4. Total knee replacement, right
-   Esperado: 0SRC0JZ | Obtido: 0SRC0NZ
+   Esperado: 0SRC0JZ | Obtido: NONE
    Notas: Replacement of right knee joint
 
-✓ 5. Diagnostic bronchoscopy
-   Esperado: 0BJ08ZZ | Obtido: 0BJ08ZZ
+✗ 5. Diagnostic bronchoscopy
+   Esperado: 0BJ08ZZ | Obtido: 0BJ8ZZZ
    Notas: Inspection of trachea, via natural or artificial opening endoscopic
 
-✓ 6. Percutaneous liver biopsy
-   Esperado: 0FB03ZX | Obtido: 0FB03ZX
+✗ 6. Percutaneous liver biopsy
+   Esperado: 0FB03ZX | Obtido: 0FBG3ZX
    Notas: Excision of liver, percutaneous, diagnostic
 
 ✗ 7. Open inguinal hernia repair with mesh
-   Esperado: 0YU60JZ | Obtido: 0MUH0JZ
+   Esperado: 0YU60JZ | Obtido: NONE
    Notas: Supplement abdominal wall with synthetic substitute, open
 
 ✗ 8. Laparoscopic hysterectomy
-   Esperado: 0UT94ZZ | Obtido: 0UTG4ZZ
+   Esperado: 0UT94ZZ | Obtido: NONE
    Notas: Resection of uterus, percutaneous endoscopic
 
 ✗ 9. Right total hip arthroplasty
-   Esperado: 0SR9019 | Obtido: 0SR901Z
+   Esperado: 0SR9019 | Obtido: NONE
    Notas: Replacement of right hip joint with metal on polyethylene
 
 ✗ 10. Colonoscopy with polypectomy
-   Esperado: 0DBN8ZZ | Obtido: 0DBK8ZZ
+   Esperado: 0DBN8ZZ | Obtido: 0DBW4ZZ
    Notas: Excision of large intestine, via natural opening endoscopic
