@@ -6,7 +6,7 @@ from deepagents import create_deep_agent
 from langgraph.types import Command
 from langgraph.checkpoint.memory import MemorySaver
 from src.llms import GoogleGenAILLM
-from src.tools import internet_search, get_weather, icd10_query, icd10pcs_procedure_query
+from src.tools import internet_search, get_weather, icd10_query, icd10pcs_procedure_query, icd10pcs_guidelines_query
 from src.prompts import SUPERVISOR_PROMPT, DIAGNOSIS_PROMPT, EVAL_PROMPT, PROCEDURES_PROMPT
 
 def coerce_text(v: Any) -> str:
@@ -75,7 +75,7 @@ class AgentManager:
                 "name": "procedures_agent",
                 "description": "Handles ICD-10-PCS procedure code lookups for medical procedures",
                 "system_prompt": PROCEDURES_PROMPT,
-                "tools": [icd10pcs_procedure_query],
+                "tools": [icd10pcs_procedure_query, icd10pcs_guidelines_query],
                 "model": self.llm.llm
             },
 
