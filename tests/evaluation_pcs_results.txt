@@ -2,48 +2,408 @@
 RESULTADOS DA AVALIAÇÃO ICD-10-PCS
 ======================================================================
 
-Total testado: 10
-Exact Match Accuracy: 10.0%
-Média posições corretas: 3.0/7
+Total testado: 100
+Exact Match Accuracy: 1.0%
+Média posições corretas: 2.1/7
 
 Detalhes:
 
-✗ 1. Laparoscopic appendectomy
-   Esperado: 0DTJ4ZZ | Obtido: 0DBJ4ZZ
-   Notas: Resection of appendix, percutaneous endoscopic
+✗ 1. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: 3V0V3JZ
+   Notas: Extraído automaticamente do CSV
 
-✗ 2. Open cholecystectomy
-   Esperado: 0FT40ZZ | Obtido: 0FBM0ZZ
-   Notas: Resection of gallbladder, open approach
+✗ 2. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: 30033JZ
+   Notas: Extraído automaticamente do CSV
 
-✓ 3. Percutaneous coronary angioplasty of single coronary artery
-   Esperado: 02703ZZ | Obtido: 02703ZZ
-   Notas: Dilation of coronary artery, percutaneous
+✗ 3. Assistance with Respiratory Ventilation, Less than 24 Consecutive Hours, Continuous Positive Airway Pressure
+   Esperado: 5A09357 | Obtido: 5A00ZZ6
+   Notas: Extraído automaticamente do CSV
 
-✗ 4. Total knee replacement, right
-   Esperado: 0SRC0JZ | Obtido: NONE
-   Notas: Replacement of right knee joint
+✗ 4. Introduction of Analgesics, Hypnotics, Sedatives into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E033NZ | Obtido: 3E033BZ
+   Notas: Extraído automaticamente do CSV
 
-✗ 5. Diagnostic bronchoscopy
-   Esperado: 0BJ08ZZ | Obtido: 0BJ8ZZZ
-   Notas: Inspection of trachea, via natural or artificial opening endoscopic
+✗ 5. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: 0H0K3GZ
+   Notas: Extraído automaticamente do CSV
 
-✗ 6. Percutaneous liver biopsy
-   Esperado: 0FB03ZX | Obtido: 0FBG3ZX
-   Notas: Excision of liver, percutaneous, diagnostic
+✗ 6. Ultrasonography of Right and Left Heart
+   Esperado: B246ZZZ | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
 
-✗ 7. Open inguinal hernia repair with mesh
-   Esperado: 0YU60JZ | Obtido: NONE
-   Notas: Supplement abdominal wall with synthetic substitute, open
+✗ 7. Introduction of Other Gas into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7SF | Obtido: 0JBG7ZZ
+   Notas: Extraído automaticamente do CSV
 
-✗ 8. Laparoscopic hysterectomy
-   Esperado: 0UT94ZZ | Obtido: NONE
-   Notas: Resection of uterus, percutaneous endoscopic
+✗ 8. Ultrasonography of Right and Left Heart
+   Esperado: B246ZZZ | Obtido: B2500ZZ
+   Notas: Extraído automaticamente do CSV
 
-✗ 9. Right total hip arthroplasty
-   Esperado: 0SR9019 | Obtido: NONE
-   Notas: Replacement of right hip joint with metal on polyethylene
+✗ 9. Introduction of Analgesics, Hypnotics, Sedatives into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E033NZ | Obtido: 3E0A3JZ
+   Notas: Extraído automaticamente do CSV
 
-✗ 10. Colonoscopy with polypectomy
-   Esperado: 0DBN8ZZ | Obtido: 0DBW4ZZ
-   Notas: Excision of large intestine, via natural opening endoscopic
+✗ 10. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 11. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: 3E0333Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 12. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: 30E23Z0
+   Notas: Extraído automaticamente do CSV
+
+✗ 13. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: 3E033KX
+   Notas: Extraído automaticamente do CSV
+
+✗ 14. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: 0BG07YZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 15. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 16. Introduction of Insulin into Subcutaneous Tissue, Percutaneous Approach
+   Esperado: 3E013VG | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 17. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 18. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: 3R0H79Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 19. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 20. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: 0H3079Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 21. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: 0VHQ3ZZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 22. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: 0H63KZZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 23. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: 3E0H8UZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 24. Introduction of Insulin into Subcutaneous Tissue, Percutaneous Approach
+   Esperado: 3E013VG | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 25. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: 062N3ZZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 26. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: 0BG073Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 27. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: 3E0231Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 28. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: 07GB3HZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 29. Introduction of Analgesics, Hypnotics, Sedatives into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E033NZ | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 30. Introduction of Insulin into Subcutaneous Tissue, Percutaneous Approach
+   Esperado: 3E013VG | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 31. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: 3EHGD3Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 32. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: 30077ZZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 33. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: 3E033NZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 34. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: 0H2F33Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 35. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: 0EB776Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 36. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: 022H35Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 37. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 38. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 39. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 40. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 41. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: 0GB373Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 42. Assistance with Respiratory Ventilation, Less than 24 Consecutive Hours, Continuous Positive Airway Pressure
+   Esperado: 5A09357 | Obtido: 5A09B66
+   Notas: Extraído automaticamente do CSV
+
+✗ 43. Introduction of Nutritional Substance into Upper GI, Via Natural or Artificial Opening
+   Esperado: 3E0G76Z | Obtido: 0JD87ZZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 44. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: 3E0Y3JZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 45. Computerized Tomography (CT Scan) of Chest, Abdomen and Pelvis
+   Esperado: BW25ZZZ | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 46. Introduction of Insulin into Subcutaneous Tissue, Percutaneous Approach
+   Esperado: 3E013VG | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 47. Introduction of Anti-inflammatory into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0333Z | Obtido: 30233ZB
+   Notas: Extraído automaticamente do CSV
+
+✗ 48. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: 023H33Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 49. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: 3E0V7FZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 50. Computerized Tomography (CT Scan) of Chest and Abdomen
+   Esperado: BW24ZZZ | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 51. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: 02H23JZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 52. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: 0BJ373Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 53. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 54. Dilation of Coronary Artery, Two Arteries with Two Drug-eluting Intraluminal Devices, Percutaneous Approach
+   Esperado: 027135Z | Obtido: 027D3AZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 55. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: 0G0V3ZZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 56. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: 3E03329
+   Notas: Extraído automaticamente do CSV
+
+✗ 57. Computerized Tomography (CT Scan) of Head
+   Esperado: BW28ZZZ | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 58. Computerized Tomography (CT Scan) of Chest and Abdomen using Low Osmolar Contrast
+   Esperado: BW241ZZ | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 59. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: 0YH03ZZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 60. Computerized Tomography (CT Scan) of Chest and Abdomen using Low Osmolar Contrast
+   Esperado: BW241ZZ | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 61. Introduction of Anti-inflammatory into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0333Z | Obtido: 052D3ZZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 62. Computerized Tomography (CT Scan) of Head
+   Esperado: BW28ZZZ | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 63. Introduction of Nutritional Substance into Upper GI, Via Natural or Artificial Opening
+   Esperado: 3E0G76Z | Obtido: 3E0Z87Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 64. Introduction of Insulin into Subcutaneous Tissue, Percutaneous Approach
+   Esperado: 3E013VG | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 65. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: 3E033BZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 66. Ultrasonography of Right and Left Heart
+   Esperado: B246ZZZ | Obtido: B240ZZZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 67. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 68. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 69. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: 0KB07ZZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 70. Introduction of Anti-inflammatory into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0333Z | Obtido: 3E013CZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 71. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: 0WHY38Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 72. Introduction of Analgesics, Hypnotics, Sedatives into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E033NZ | Obtido: 300A38Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 73. Introduction of Analgesics, Hypnotics, Sedatives into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E033NZ | Obtido: 3E033BZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 74. Respiratory Ventilation, Single, Nonmechanical
+   Esperado: 5A19054 | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 75. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: 3E043BZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 76. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: 30023KZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 77. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: 30043ZZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 78. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: 30023AZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 79. Computerized Tomography (CT Scan) of Chest and Abdomen using Low Osmolar Contrast
+   Esperado: BW241ZZ | Obtido: BC2C1ZZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 80. Introduction of Analgesics, Hypnotics, Sedatives into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E033NZ | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 81. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: 306B33Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 82. Ultrasonography of Right and Left Heart
+   Esperado: B246ZZZ | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 83. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: 3C0033Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 84. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: 0B070ZZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 85. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: 3E0G7GC
+   Notas: Extraído automaticamente do CSV
+
+✗ 86. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: 30H333Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 87. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 88. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: 0H2V3KZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 89. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: 300J3AZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 90. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: 3E0133Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 91. Introduction of Analgesics, Hypnotics, Sedatives into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E033NZ | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 92. Measurement of Arterial Saturation, Peripheral, Percutaneous Approach
+   Esperado: 4A033R1 | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 93. Introduction of Electrolytic and Water Balance Substance into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E0337Z | Obtido: 3E1233Z
+   Notas: Extraído automaticamente do CSV
+
+✗ 94. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: 0B297AZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 95. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 96. Introduction of Other Anti-infective into Peripheral Vein, Percutaneous Approach
+   Esperado: 3E03329 | Obtido: 06253JZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 97. Introduction of Other Therapeutic Substance into Respiratory Tract, Via Natural or Artificial Opening
+   Esperado: 3E0F7GC | Obtido: 3B087ZZ
+   Notas: Extraído automaticamente do CSV
+
+✗ 98. Inspection of Tracheobronchial Tree, Via Natural or Artificial Opening Endoscopic
+   Esperado: 0BJ08ZZ | Obtido: NONE
+   Notas: Extraído automaticamente do CSV
+
+✗ 99. Assistance with Respiratory Ventilation, Less than 24 Consecutive Hours, Continuous Positive Airway Pressure
+   Esperado: 5A09357 | Obtido: 5F00X6Z
+   Notas: Extraído automaticamente do CSV
+
+✓ 100. Transfusion of Nonautologous Red Blood Cells into Peripheral Vein, Percutaneous Approach
+   Esperado: 30233N1 | Obtido: 30233N1
+   Notas: Extraído automaticamente do CSV

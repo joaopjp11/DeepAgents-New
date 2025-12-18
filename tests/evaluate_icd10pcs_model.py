@@ -277,13 +277,3 @@ with open(output_file, 'w', encoding='utf-8') as f:
         f.write(f"   Notas: {r['notes']}\n")
 
 print(f"\n💾 Resultados guardados em: {output_file}")
-
-# Comparar com benchmarks anteriores
-try:
-    from benchmark_comparison import compare_benchmarks
-    compare_benchmarks('icd10pcs', {
-        'exact_match': accuracy,
-        'avg_positions': avg_positions_correct / 7  # Normalizar para 0-1
-    })
-except Exception as e:
-    print(f"\n⚠️  Não foi possível comparar com benchmarks: {e}")
